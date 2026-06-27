@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lemon Balm — Spot Any Text, Anywhere</title>
+  <meta name="description" content="Lemon Balm is an iOS app that highlights matching text in real time using your camera. No internet required." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-inner container">
+      <div class="leaf-icon" aria-hidden="true">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" fill="#dcfce7"/>
+          <!-- leaf shape -->
+          <path d="M40 18 C40 18 62 26 62 44 C62 58 50 64 40 64 C30 64 18 58 18 44 C18 26 40 18 40 18Z" fill="#22c55e" opacity="0.9"/>
+          <!-- midrib -->
+          <path d="M40 20 L40 62" stroke="#16a34a" stroke-width="2" stroke-linecap="round"/>
+          <!-- veins -->
+          <path d="M40 34 Q32 30 28 26" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M40 34 Q48 30 52 26" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M40 44 Q30 40 24 36" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M40 44 Q50 40 56 36" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M40 54 Q32 52 28 48" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M40 54 Q48 52 52 48" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
+      <h1>Lemon Balm</h1>
+      <p class="tagline">Spot any text, anywhere.</p>
+      <p class="hero-sub">
+        Type a word or phrase. Point your camera at anything with text on it.
+        Lemon Balm highlights every match with a glowing overlay and haptic feedback&nbsp;—
+        entirely on&nbsp;device, no internet required.
+      </p>
+      <!-- TODO: replace href with live App Store link when the app ships -->
+      <a href="#" class="cta-badge" aria-label="Download on the App Store (coming soon)">
+        <span class="badge-pill">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span class="store-sub">
+            <span>Download on the</span>
+            <span>App Store</span>
+          </span>
+        </span>
+        <span class="badge-soon">Coming soon</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HOW IT WORKS ──────────────────────────────────────── -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <div>
+              <strong>Type</strong>
+              <p>Enter any word or phrase — a product name, ingredient, allergen, brand, anything you want to find.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <div>
+              <strong>Point</strong>
+              <p>Aim your camera at labels, menus, signage, shelves, boxes — any surface with text on it.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <div>
+              <strong>Find</strong>
+              <p>Lemon Balm draws a glowing box around every match in real time, with a haptic pulse the moment something appears.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="how-note">
+          Lemon Balm uses Apple Vision's on-device OCR — the same engine that powers Live Text.
+          All recognition happens locally on your iPhone; your camera feed never leaves your device.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SUPPORT / FAQ ─────────────────────────────────────── -->
+    <section class="faq" id="support">
+      <div class="container">
+        <h2>Support &amp; FAQ</h2>
+
+        <details>
+          <summary>Why isn't Lemon Balm finding what I'm looking for?</summary>
+          <div class="faq-body">
+            <p>A few things to try:</p>
+            <ul>
+              <li><strong>More light.</strong> OCR accuracy drops in dim conditions. Tap the flashlight icon to turn on the torch.</li>
+              <li><strong>Shorter query.</strong> Instead of "Organic Lemon Balm Herbal Tea", try just "Lemon Balm". The app matches when every word in your query appears somewhere in the text it reads.</li>
+              <li><strong>Hold still.</strong> Give the camera half a second to lock focus before expecting a match.</li>
+              <li><strong>Check the debug panel.</strong> Toggle the debug switch (top-right corner) to see every string the app is currently reading. If your target text appears there but doesn't highlight, try rewording your query. If it's missing entirely, lighting or print quality is the issue.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Does Lemon Balm work without an internet connection?</summary>
+          <div class="faq-body">
+            <p>Yes — fully. All text recognition runs on your iPhone using Apple Vision. No Wi-Fi or cellular data is used or required.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What does Lemon Balm do with my camera footage?</summary>
+          <div class="faq-body">
+            <p>Nothing leaves your device. Video frames are processed in memory by Apple Vision and immediately discarded. Lemon Balm does not record, store, upload, or share any camera data.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Which iPhone models and iOS versions are supported?</summary>
+          <div class="faq-body">
+            <p>Lemon Balm requires <strong>iOS 17 or later</strong>. Any iPhone that can run iOS 17 will work; performance is best on iPhone 12 and newer due to the Neural Engine improvements in the A14 chip.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I report a bug or request a feature?</summary>
+          <div class="faq-body">
+            <p>Email us at <a href="mailto:lemonbalmsupport@gmail.com">lemonbalmsupport@gmail.com</a>. Include your iPhone model, iOS version, and a short description of what happened (or what you'd love to see).</p>
+          </div>
+        </details>
+
+        <p class="contact-line">
+          Still stuck? Reach us at <a href="mailto:lemonbalmsupport@gmail.com">lemonbalmsupport@gmail.com</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── PRIVACY POLICY ────────────────────────────────────── -->
+    <section class="privacy" id="privacy">
+      <div class="container">
+        <h2>Privacy Policy</h2>
+        <p class="privacy-meta">Effective date: June 27, 2026 &nbsp;·&nbsp; Last updated: June 27, 2026</p>
+
+        <h3>What we collect</h3>
+        <p>Nothing. Lemon Balm does not collect, transmit, or store any personal data.</p>
+
+        <h3>Camera access</h3>
+        <p>
+          Lemon Balm requires camera access to perform text recognition. Video frames are
+          analyzed entirely on your device using Apple Vision. No images or video are
+          recorded, saved, or sent anywhere.
+        </p>
+
+        <h3>Analytics and advertising</h3>
+        <p>Lemon Balm contains no analytics SDKs, no advertising networks, and no third-party tracking of any kind.</p>
+
+        <h3>Data retention</h3>
+        <p>Because no data is collected, there is nothing to retain or delete.</p>
+
+        <h3>Children</h3>
+        <p>Lemon Balm does not knowingly collect any information from anyone, including children under 13.</p>
+
+        <h3>Contact</h3>
+        <p>Questions about this policy? Email <a href="mailto:lemonbalmsupport@gmail.com">lemonbalmsupport@gmail.com</a>.</p>
+
+        <h3>Changes to this policy</h3>
+        <p>If this policy ever changes, the updated version will appear on this page with a new effective date.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <nav class="footer-nav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#support">Support</a>
+        <a href="#privacy">Privacy</a>
+        <a href="mailto:lemonbalmsupport@gmail.com">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Lemon Balm. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
